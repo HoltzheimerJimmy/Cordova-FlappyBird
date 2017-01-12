@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, touch-action: manipulation">
+    <meta charset="utf-8" />
+    <title>FlappyBird</title>
+    <link href="css/index.css" rel="stylesheet" />
+</head>
+<body>
+        <div id="actual-score"></div>
+        <div id="hi-score"></div>
+        <img src="images/flappy.png" alt="flappy" id="flappy" />
+        <img src="images/pipe.png" alt="pipe" id="pipe1" class="pipe" />
+        <img src="images/pipe.png" alt="pipe" id="pipe2" class="pipe" />
+        <img src="images/pipe.png" alt="pipe" id="pipe3" class="pipe" />
+        <img src="images/pipe.png" alt="pipe" id="pipe4" class="pipe" />
+        <div id="game-over">GAME OVER</div>
+ 
+
+        <script src="cordova.js"></script>
+        <script src="scripts/platformOverrides.js"></script>
+
+        <script src="scripts/jquery-3.1.1.min.js"></script>
+        <script src="scripts/jquery.overlaps.js"></script>
+
+        <script src="scripts/score.js"></script>
+        <script src="scripts/pipe.js"></script>
+        <script src="scripts/flappy.js"></script>
+        <script src="scripts/index.js"></script>
+</body>
+</html>

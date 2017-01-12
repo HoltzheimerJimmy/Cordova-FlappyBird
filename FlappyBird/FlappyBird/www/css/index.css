@@ -1,0 +1,73 @@
+﻿html {
+-ms-touch-action: manipulation;
+touch-action: manipulation;
+}
+body {
+    overflow-y: hidden;
+    height: 640px;
+    background-image: url("../images/background.gif");
+    background-size: 360px 640px;
+    background-repeat: no-repeat;
+}
+#flappy{
+    position:fixed;
+    top: 300px;
+    left:100px;
+
+    height:50px;
+}
+.pipe{
+    position: fixed;
+    height:300px;
+    width:100px;
+    left:360px;
+}
+#pipe2, #pipe4{
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Safari and Chrome */
+    -o-transform: rotate(180deg); /* Opera */
+    -moz-transform: rotate(180deg); /* Firefox */
+}
+#hi-score{
+    height:50px;
+    line-height:50px;
+    z-index:1;
+    position:fixed;
+    top:0;
+    right:0;
+    padding-right:10px;
+    font-weight: bold;
+    font-size:1em;
+    color:red;
+}
+#actual-score{
+    height:50px;
+    line-height:50px;
+    z-index:2;
+    position:fixed;
+    top:0;
+    left:0;
+    padding-left:10px;
+    font-weight: bold;
+    font-size:1em;
+    color:#fff;
+}
+#game-over{
+    background-color:red;
+    opacity:0.7;
+    z-index:3;
+    position:fixed;
+    top:0;
+    left:0;
+    width:360px;
+    height:640px;
+    line-height:640px;
+    vertical-align:middle;
+    text-align: center;
+    display:none;
+    
+    font-weight:bold;
+    font-size: 3em;
+    color:#fff;
+}
